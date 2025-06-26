@@ -2,6 +2,9 @@
 
 - Create-react-App
 - Configured TailwindCSS
+- Header
+- Login form
+- Sign Up from
 
 # Feateres
 
