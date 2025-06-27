@@ -16,7 +16,7 @@
 - Implemented Sign out Properly
 - User profile updated
 
-# Feateres
+# Features
 
 - Login/ Signup
   - Sign In/ Login form page
