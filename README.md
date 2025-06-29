@@ -15,6 +15,16 @@
 - Created Redux store with userSlice
 - Implemented Sign out Properly
 - User profile updated
+- Registered in TMBD Movies
+- Got data from there for Now Playing Movies(API call made)
+- Custom hook for now playing movie.
+- Created MovieSlice
+- Updated the store with movies.
+- Planning for Maiin and Secondary Container
+- Created custom hooks for fetching the Trailer video
+- Updated the store for Trailer Video Data
+- Embeded the youtube video.
+- Maincontainer is completed (Trailer video and title of moviw)
 
 # Features
 
