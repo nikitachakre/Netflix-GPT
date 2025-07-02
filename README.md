@@ -25,6 +25,7 @@
 - Updated the store for Trailer Video Data
 - Embeded the youtube video.
 - Maincontainer is completed (Trailer video and title of moviw)
+- Build Secondary Container
 
 # Features
 

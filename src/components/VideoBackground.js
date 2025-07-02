@@ -10,10 +10,10 @@ const VideoBackground = ({ movieId }) => {
   // if (!trailerVideo) return null;
 
   return (
-    <div className="relative w-full h-[100vh] aspect-video ">
+    <div className="relative w-full h-[100vh] aspect-video sm:h-[90vh] md:h-[80vh] lg:h-[100vh]">
       <iframe
         className=" absolute w-full h-full top-0 left-0 "
-        src={"https://www.youtube.com/embed/" + trailerVideo?.key+ "?&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&showinfo=0"} //controls=0-Play/pause bar hatata hai
+        src={"https://www.youtube.com/embed/" + trailerVideo?.key+ "?&autoplay=1&mute=1&rel=0&controls=0"} //controls=0-Play/pause bar hatata hai
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       >
