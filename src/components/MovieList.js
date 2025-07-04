@@ -11,7 +11,6 @@ const MovieList = ({ title, movies }) => {
           {movies?.length > 0 &&
             movies.map((movie) => (
               <MovieCard key={movie.id} posterPath={movie.poster_path} />
-              
             ))}
         </div>
       </div>

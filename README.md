@@ -26,6 +26,9 @@
 - Embeded the youtube video.
 - Maincontainer is completed (Trailer video and title of moviw)
 - Build Secondary Container
+- GPT Seacrh Page
+- GPT Search Bar
+- Multi- Language Feature in App
 
 # Features
 
@@ -39,6 +42,6 @@
   - Tittle and description of movie
   - MovieSuggestions
     - MoviesList \*N
-- NetflicGPT page
+- NetflixGPT page
   - Search Bar
   - Movie Suggestions
