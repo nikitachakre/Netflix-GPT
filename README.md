@@ -28,7 +28,16 @@
 - Build Secondary Container
 - GPT Seacrh Page
 - GPT Search Bar
-- Multi- Language Feature in App
+- Multi- Language Feature in in GPT search page
+- Get Open AI Api key
+- GPT Search Api Call
+- Fetched MoviesSuggetions from TMDB
+- Created GPTSlice and stored the suggested movies in Redux
+- Reused Movie List component for Displaying the Suggested movies to user
+- Created a Clear button for storing results (created an action for clearing the suggested movies)
+- Memoization
+- Added .evn File
+- Adding .env file to gitignore
 
 # Features
 

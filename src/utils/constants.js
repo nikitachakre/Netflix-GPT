@@ -8,11 +8,8 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2Y2Y2MTE3NzhhMzlhYTViM2RkZDA2ZGUyMGJhMGZkNyIsIm5iZiI6MTc0NTU5MTMwMS4zMDQ5OTk4LCJzdWIiOiI2ODBiOWMwNThiY2VhNjZhODZhYWZiMzQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.CwbkeLfwTD0A-hE_0AkK-b682JVezJ38jY7ldDe3cWk",
-  },
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_API_KEY},
 };
-
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
 
 export const SUPPORTED_LANGS = [
@@ -20,3 +17,13 @@ export const SUPPORTED_LANGS = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const GEMINI_KEY = process.env.REACT_APP_OPENAI_KEY;
+export const GEMINI_API_REQ = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+};
+
+export const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;

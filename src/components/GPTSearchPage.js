@@ -8,7 +8,7 @@ const GPTSearchPage = () => {
     <div>
       <div className="relative">
         <img
-          className=" hidden md:block absolute -z-20"
+          className=" hidden md:block fixed -z-20"
           src={BACKGROUNDIMAGE_URL}
           alt="Background-Image"
         ></img>
