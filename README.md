@@ -38,6 +38,7 @@
 - Memoization
 - Added .evn File
 - Adding .env file to gitignore
+- Made Movie Trailer and Tille Dynamic.
 
 # Features
 

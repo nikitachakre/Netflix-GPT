@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 const useMovieTrailer = (movieId) => {
   const dispatch = useDispatch();
   const trailerVideo = useSelector((store) => store.movies.trailerVideo);
-
+  
+ 
   const getMovieTrailer = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/" 
@@ -24,8 +25,7 @@ const useMovieTrailer = (movieId) => {
   };
 
   useEffect(() => {
-    !trailerVideo && getMovieTrailer();
-  },[]);
+    if(!trailerVideo || trailerVideo.movieId !== movieId) getMovieTrailer();// when clicking on same movie don't fetch.
+  },[movieId]);
 };
-
 export default useMovieTrailer;

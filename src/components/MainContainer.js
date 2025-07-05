@@ -5,9 +5,10 @@ import { useSelector } from "react-redux";
 
 function MainContainer() {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
+  const selectedMovie = useSelector((store) => store.movies.selectedMovie);
   if (!movies) return; // aka early return; (movies == null) same thing
 
-  const mainMovie = movies[0];
+  const mainMovie = selectedMovie ? selectedMovie : movies[0];
   // console.log(mainMovie);
 
   const { original_title, overview, id } = mainMovie;
