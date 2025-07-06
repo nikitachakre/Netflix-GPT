@@ -1,5 +1,23 @@
 # Netflix-GPT
 
+A smart Netflix clone powered by OpenAI Gemini + TMDB + Firebase.
+
+**Live Project:**
+[Click Here to View the Live Site](https://netflix-gpt-git-main-nikita-chakres-projects.vercel.app)
+
+---
+
+# Tech Stack
+
+- React.js
+- Redux Toolkit
+- Firebase Auth
+- Gemini API (Google)
+- TMDB API
+- Tailwind CSS
+
+# My Development Process (Building Blocks)
+
 - Create-react-App
 - Configured TailwindCSS
 - Header
