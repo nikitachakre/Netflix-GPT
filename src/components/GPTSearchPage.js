@@ -8,13 +8,14 @@ const GPTSearchPage = () => {
     <div>
       <div className="relative">
         <img
-          className=" hidden md:block fixed -z-20"
+          className="fixed -z-20 h-screen md:h-auto object-cover"
           src={BACKGROUNDIMAGE_URL}
           alt="Background-Image"
         ></img>
+          <GPTSearchBar/>
+          <GPTMoviesSuggestions/>
       </div>
-      <GPTSearchBar/>
-      <GPTMoviesSuggestions/>
+      
     </div>
     
   )

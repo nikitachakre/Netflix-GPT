@@ -51,13 +51,13 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute px-8 py-2 bg-gradient-to-b w-full  from-black z-50 flex justify-between">
-      <img className="w-40" src={LOGP_URL} alt="Logo"></img>
+    <div className="absolute px-8 py-2 bg-gradient-to-b w-full  from-black z-50 flex flex-col md:flex-row justify-between">
+      <img className="w-40 mx-20 md:mx-0 h-16 md:h-auto" src={LOGP_URL} alt="Logo"></img>
       {user && (
-        <div>
+        <div className="flex justify-between">
           {showGptSearch && (
             <select
-              className="px-2 py-1 m-2 text-red-800 font-medium rounded-sm cursor-pointer"
+              className="px-2 py-1 m-4 md:mr-2 text-red-800 font-medium rounded-sm cursor-pointer"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGS.map((lang) => (
@@ -68,7 +68,7 @@ const Header = () => {
             </select>
           )}
           <button
-            className="text-white px-2 py-1 bg-red-600 text-sm rounded font-medium mr-2"
+            className="text-white px-2 py-1 my-4 ml-4 md:ml-2 bg-red-600 text-sm rounded font-medium mr-6 md:mr-2"
             onClick={handleGPTSearchClick}
           >
            {showGptSearch ? <>Home <i className="fa fa-home" aria-hidden="true"></i></> : <> GPTSearch <i class="fa fa-search" aria-hidden="true"></i></>} 
@@ -79,7 +79,7 @@ const Header = () => {
           >
             Sign Out <i class="fa fa-sign-out" aria-hidden="true"></i>
           </button>
-        </div>
+        </div> 
       )}
     </div>
   );

@@ -84,7 +84,7 @@ const Login = () => {
       <Header />
       <div>
         <img
-          className=" hidden md:block absolute"
+          className="absolute object-cover hidden md:inline-block"
           src={BACKGROUNDIMAGE_URL}
           alt="Background-Image"
         ></img>
@@ -92,7 +92,7 @@ const Login = () => {
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute bg-black text-white p-11 md:mt-36 sm:mt-24 mt-20 mx-auto right-0 left-0 lg:w-3/12 sm:8/12 md: 4/12 w-11/12  rounded-md bg-opacity-80"
+        className="absolute bg-black text-white p-14 md:p-11 mt-20 md:mt-36 mx-0 md:mx-auto right-0 left-0 w-full md:w-3/12  rounded-md bg-opacity-80"
       >
         <h1 className="font-bold text-2xl mb-4">
           {isSignInForm ? "Sign In" : "Sign Up"}

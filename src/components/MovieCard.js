@@ -13,10 +13,10 @@ const MovieCard = ({posterPath, movie}) => {
 
   
   return (
-    <div className='w-48 pl-3 hover:w-[200px] transition-all duration-700 relative' onClick={handlePlayClick}>
+    <div className=' w-36 md:w-48 md:pl-3 pl-[2px] hover:w-[150px] md:hover:w-[200px] transition-all duration-700 relative' onClick={handlePlayClick}>
         <img className='rounded-sm cursor-pointer' alt='MovieCard' src={ IMG_CDN_URL + posterPath}>
         </img>
-          <i className="fa fa-play px-2 py-1 absolute text-white bg-black opacity-80 rounded-full text-sm top-32 left-24 cursor-pointer" aria-hidden="true" ></i>
+          <i className="fa fa-play px-2 py-1 absolute top-32 left-20  text-white bg-black opacity-80 rounded-full text-sm  cursor-pointer" aria-hidden="true" ></i>
     </div>
   )
 }
