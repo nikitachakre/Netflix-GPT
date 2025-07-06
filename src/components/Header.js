@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <div className="absolute px-8 py-2 bg-gradient-to-b w-full  from-black z-50 flex flex-col md:flex-row justify-between">
-      <img className="w-40 mx-20 md:mx-0 h-16 md:h-auto" src={LOGP_URL} alt="Logo"></img>
+      <img className="w-40 mx-24 md:mx-0 h-16 md:h-auto" src={LOGP_URL} alt="Logo"></img>
       {user && (
         <div className="flex justify-between">
           {showGptSearch && (
